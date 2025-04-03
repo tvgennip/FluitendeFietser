@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="javascript/java.js"></script>
+    <title>Fluitende Fietser</title>
+</head>
+<body>
+  <grid id="header">
+    <img id="logo" src="images/logo.png">
+    <h1>Fluitende Fietser</h1>
+    <img id="zoek" src="images/zoek.png">
+    <input id="zoeken"/>
+  </grid>
+  <grid id="navigatie">
+    <a href="index.html"><button class="nav">Home</button> </a>
+    <a href="Fietsen.html"><button class="nav">Fietsen</button> </a>
+    <a href="fietsenverhuur.html"><button class="nav">Fietsen verhuur</button> </a>
+    <a href="Over-ons.html"><button class="nav">Over ons</button> </a>
+    <a href="contact.html"><button class="nav">Contact</button> </a>
+    <a href="Buco1.html"><button class="nav">Buco 1</button> </a>
+    <a href="buco2.html"><button class="nav">Buco 2</button> </a>
+  </grid>
+  <div id="side">
+  </div>
+
+  <div class="container">
+    <section class="contact-form">
+      <div class="form-group">
+          <label for="name">Voornaam:</label>
+          <input type="text" id="name" name="name" placeholder="Voer je voornaam in" required>
+      </div>
+      <div class="form-group">
+          <label for="lastname">Achternaam:</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Voer je achternaam in" required>
+      </div>
+      <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Voer je e-mail in" required>
+      </div>
+      <div class="form-group">
+          <label for="message">Uw vraag:</label>
+          <textarea id="message" name="message" placeholder="Uw bericht" required></textarea>
+      </div>
+      <input type="submit" class="submit-btn" onclick="huren()"></input>
+  </section>
+
+        <section class="contact-info">
+            <h1>Contact Informatie</h1>
+            <p>als je nog wat vragen hebt. kunt u contact met ons op nemen via de volgende methodes:</p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:info@fluitendefietser.com">info@fluitendefietser.com</a></li>
+                <li><strong>Telefoon:</strong> +31 (06) 84270835</li>
+                <li><strong>Adres:</strong> Papenvoortse Heide 7, 5674 SL Nuenen</li>
+                <li><strong>Openings tijden:</strong> Ma t/m za: 09.00 - 19.00 uur</li>
+            </ul>
+            <h1>Onze locatie</h1>      
+            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=51.474249,%20%205.595563+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+</div>
+
+<grid id="footer">
+  <div id="link">
+   <a href="Over-ons.html"> <label id="ons">Over ons</label> </a>
+   <a href="contact.html"> <label id="contact">Contact info</label> </a>
+   <a href="https://www.facebook.com/fietsmagazine"> <img id="facebook" src="images/facebook.png"/> </a> 
+   <a href="Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf"> <label id="info">algemene voorwaarden</label> </a> 
+    <label id="btw">KVK: 88599665</label>
+    <label id="koophandel">BTW NL999888492Z09</label>
+  </div>
+  <label id="copyright">© 2022 Fluitende Fietser</label>
+  <marquee behavior="alternate" direction="right">
+    <img id="fiets" src="images/fiets-standaard-footer.png" alt="Fiets">
+</marquee>
+</grid>
+</body>
+</html>

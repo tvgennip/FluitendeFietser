@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="javascript/java.js"></script>
+    <title>Fluitende Fietser</title>
+</head>
+<body>
+  <grid id="header">
+    <img id="logo" src="images/logo.png">
+    <h1>Fluitende Fietser</h1>
+    <img id="zoek" src="images/zoek.png">
+    <input id="zoeken"/>
+  </grid>
+  <grid id="navigatie">
+    <a href="index.html"><button class="nav">Home</button> </a>
+    <a href="Fietsen.html"><button class="nav">Fietsen</button> </a>
+    <a href="fietsenverhuur.html"><button class="nav">Fietsen verhuur</button> </a>
+    <a href="Over-ons.html"><button class="nav">Over ons</button> </a>
+    <a href="contact.html"><button class="nav">Contact</button> </a>
+    <a href="Buco1.html"><button class="nav">Buco 1</button> </a>
+    <a href="buco2.html"><button class="nav">Buco 2</button> </a>
+  </grid>
+  <div id="side">
+  </div>
+  <h3>fietsen huren</h3>
+  <div id="display">
+
+  <img id="display1" src="images/logo.png">
+  </img>
+
+  <table id="verhuur">
+    <tr>
+      <th>Fiets</th>
+      <th>1 uur</th>
+      <th>2 uur</th>
+      <th>4 uur</th>
+      <th>6 uur</th>
+      <th>8 uur</th>
+      <th>1 dag</th>
+    </tr>
+    <tr>
+        <td>Gazelle CityGo C7</td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+    </tr>
+    <tr>
+        <td>Pelikaan Carry On Lady</td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+    </tr>
+    <tr>
+        <td>Gazelle Orange C7+ HMB 2020</td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+      </tr>
+      <tr>
+        <td>Allegra voorwielmotor</td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+        <td><input type="checkbox" name="select" onclick="updateImage()"></td>
+      </tr>
+  </table>
+
+  <img id="display2" src="images/logo.png">
+  </img>
+
+  <a href="huren.html" id="huren"><button type="submit" id="huren">inzenden</button></a>
+</div>
+
+  <grid id="footer">
+    <div id="link">
+     <a href="Over-ons.html"> <label id="ons">Over ons</label> </a>
+     <a href="contact.html"> <label id="contact">Contact info</label> </a>
+     <a href="https://www.facebook.com/fietsmagazine"> <img id="facebook" src="images/facebook.png"/> </a> 
+     <a href="Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf"> <label id="info">algemene voorwaarden</label> </a> 
+      <label id="btw">KVK: 88599665</label>
+      <label id="koophandel">BTW NL999888492Z09</label>
+    </div>
+    <label id="copyright">© 2022 Fluitende Fietser</label>
+    <marquee behavior="alternate" direction="right">
+      <img id="fiets" src="images/fiets-standaard-footer.png" alt="Fiets">
+  </marquee>
+  </grid>
+</body>
+</html>

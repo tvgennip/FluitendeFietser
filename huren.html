@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="javascript/java.js"></script>
+    <title>Fluitende Fietser</title>
+</head>
+<body onload="gekozenfietsen()">
+  <grid id="header">
+    <img id="logo" src="images/logo.png">
+    <h1>Fluitende Fietser</h1>
+    <img id="zoek" src="images/zoek.png">
+    <input id="zoeken"/>
+  </grid>
+  <grid id="navigatie">
+    <a href="index.html"><button class="nav">Home</button> </a>
+    <a href="Fietsen.html"><button class="nav">Fietsen</button> </a>
+    <a href="fietsenverhuur.html"><button class="nav">Fietsen verhuur</button> </a>
+    <a href="Over-ons.html"><button class="nav">Over ons</button> </a>
+    <a href="contact.html"><button class="nav">Contact</button> </a>
+    <a href="Buco1.html"><button class="nav">Buco 1</button> </a>
+    <a href="buco2.html"><button class="nav">Buco 2</button> </a>
+  </grid>
+  <div id="side">
+  </div>
+  <div class="container">
+    <section class="contact-form">
+            <div class="form-group">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" placeholder="Voer je naam in" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Voer je e-mail in" required>
+            </div>
+            <div class="form-group">
+                <label for="adres">adres:</label>
+                <input type="text" id="adres" name="adres" placeholder="Voer je adres in" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone">stad:</label>
+                <input type="email" id="stad" name="email" placeholder="Voer je stad in" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone">postcode:</label>
+                <input type="email" id="postcode" name="email" placeholder="Voer je postcode in" required>
+            </div>
+            <button type="submit" class="submit-btn" onclick="huren()">inzenden</button>
+    </section>
+    <section>
+      <table id="verhuur-tabel">
+        <tr>
+            <th>Fiets</th>
+            <th>Geselecteerde tijdsduur</th>
+        </tr>
+    </table>
+        <img id="showroom" src="images/logo.png"></img>
+    </section>
+    </div>
+  <grid id="footer">
+    <div id="link">
+     <a href="Over-ons.html"> <label id="ons">Over ons</label> </a>
+     <a href="contact.html"> <label id="contact">Contact info</label> </a>
+     <a href="https://www.facebook.com/fietsmagazine"> <img id="facebook" src="images/facebook.png"/> </a> 
+     <a href="Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf"> <label id="info">algemene voorwaarden</label> </a> 
+      <label id="btw">KVK: 88599665</label>
+      <label id="koophandel">BTW NL999888492Z09</label>
+    </div>
+    <label id="copyright">© 2022 Fluitende Fietser</label>
+    <marquee behavior="alternate" direction="right">
+      <img id="fiets" src="images/fiets-standaard-footer.png" alt="Fiets">
+  </marquee>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="javascript/java.js"></script>
+    <title>Fluitende Fietser</title>
+</head>
+<body>
+  <grid id="header">
+    <img id="logo" src="images/logo.png">
+    <h1>Fluitende Fietser</h1>
+    <img id="zoek" src="images/zoek.png">
+    <input id="zoeken"/>
+  </grid>
+  <grid id="navigatie">
+    <a href="index.html"><button class="nav">Home</button> </a>
+    <a href="Fietsen.html"><button class="nav">Fietsen</button> </a>
+    <a href="fietsenverhuur.html"><button class="nav">Fietsen verhuur</button> </a>
+    <a href="Over-ons.html"><button class="nav">Over ons</button> </a>
+    <a href="contact.html"><button class="nav">Contact</button> </a>
+    <a href="Buco1.html"><button class="nav">Buco 1</button> </a>
+    <a href="buco2.html"><button class="nav">Buco 2</button> </a>
+  </grid>
+  <div id="side">
+  </div>
+
+  <h3>Onze fietsen</h3>
+
+  <p id="textinfo">Hieronder kunt u de collectie van onzde fietsen zien. Met alle gegevens erbij over de fietsen. Zodat u de beste fiets kan kiezen die bij u past</p>
+
+  <div class="shop">
+    <div class="product-card" onclick="showPopup('Gazelle CityGo C7', 'images/Gazelle_CityGo_C7.jpg', 'Niet elektrisch', 'Geschikt voor zakelijk en privé', 'Heren', 'Gazelle', 'Nieuw', 'Meerdere', '€679,00', 'Wielmaat 28 inches')">
+        <img src="images/Gazelle_CityGo_C7.jpg" alt="Gazelle CityGo C7" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">Gazelle CityGo C7</h3>
+        </div>
+    </div>
+
+    <div class="product-card" onclick="showPopup('Pelikaan Carry On Lady', 'images/Pelikaan_Carry_On_Lady.jpg', 'Elektrisch', 'Geschikt voor zakelijk en privé', 'Dames', 'Pelikaan', 'Nieuw', 'Zwart', '€769,00', '28 Inch 53 cm 3V V-Brakes')">
+        <img src="images/Pelikaan_Carry_On_Lady.jpg" alt="Pelikaan Carry On Lady" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">Pelikaan Carry On Lady</h3>
+        </div>
+    </div>
+
+    <div class="product-card" onclick="showPopup('Gazelle Orange C7+ HMB 2020', 'images/Gazelle_Orange_C7.jpg', 'Elektrisch', 'Geschikt voor zakelijk en privé', 'Heren', 'Gazelle', 'Nieuw', 'Blauw', '€2199,00', 'Frameraat 53cm (1.66m - 1.77m)')">
+        <img src="images/Gazelle_Orange_C7.jpg" alt="Gazelle Orange C7+ HMB 2020" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">Gazelle Orange C7+ HMB 2020</h3>
+        </div>
+    </div>
+
+    <div class="product-card" onclick="showPopup('Allegra voorwielmotor', 'images/Stella_Allegra_voorwielmotor.jpg', 'Elektrisch', 'Geschikt voor zakelijk en privé', 'Dames', 'Stella', 'Nieuw', 'Zwart', '€999,00', 'Frameraat S (Lichaamslengte 1,62m - 1,73m)')">
+        <img src="images/Stella_Allegra_voorwielmotor.jpg" alt="Allegra voorwielmotor" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">Allegra voorwielmotor</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Pop-up -->
+<div id="popup" class="popup" onclick="closePopup(event)">
+    <div class="popup-content" onclick="event.stopPropagation()">
+      <span class="close-btn" onclick="closePopup()">×</span>
+      <h2 id="popup-title"></h2>
+      <img id="popup-image" src="" alt="Product Image">
+      <p id="popup-drive-type"></p>
+      <p id="popup-business-type"></p>
+      <p id="popup-gender"></p>
+      <p id="popup-brand"></p>
+      <p id="popup-condition"></p>
+      <p id="popup-color"></p>
+      <p id="popup-price"></p>
+      <p id="popup-remarks"></p>
+    </div>
+</div>
+
+    <grid id="footer">
+      <div id="link">
+       <a href="Over-ons.html"> <label id="ons">Over ons</label> </a>
+       <a href="contact.html"> <label id="contact">Contact info</label> </a>
+       <a href="https://www.facebook.com/fietsmagazine"> <img id="facebook" src="images/facebook.png"/> </a> 
+       <a href="Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf"> <label id="info">algemene voorwaarden</label> </a> 
+        <label id="btw">KVK: 88599665</label>
+        <label id="koophandel">BTW NL999888492Z09</label>
+      </div>
+      <label id="copyright">© 2022 Fluitende Fietser</label>
+      <marquee behavior="alternate" direction="right">
+        <img id="fiets" src="images/fiets-standaard-footer.png" alt="Fiets">
+    </marquee>
+    </grid>
+</body>
+</html>
