@@ -203,8 +203,8 @@ if (checkboxes[6].checked || checkboxes[7].checked || checkboxes[8].checked || c
         sessionStorage.setItem('huurtijd', '1 dag')
         sessionStorage.getItem('huurtijd')
       }
-      display1.src = 'images/gazelle_citygo_C7.jpg';
-      display2.src = 'images/gazelle_citygo_C7.jpg';
+      display1.src = 'images/Gazelle_CityGo_C7.jpg';
+      display2.src = 'images/Gazelle_CityGo_C7.jpg';
   } 
 }
 
